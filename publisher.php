@@ -13,7 +13,7 @@ $password = 'xxxxx';
 $vhost = 'xxxxx';
 
 // Initiated connection to CloudAMQP
-$conn = new AMQPStreamConnection($host, $port, $user, $password, 'fwamthog');
+$conn = new AMQPStreamConnection($host, $port, $user, $password, $vhost);
 $channel = $conn->channel();
 
 // Queue name, this name must be same with consumer.
