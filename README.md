@@ -6,10 +6,12 @@ These microservices eventually need to communicate to each other to receive and 
 
 Data would be passed to RabbitMQ(message broker) by a producer and the rest of microservices(consumers) will execute the task that exist inside a queue of RabbitMQ. As example, client want to send sms and at the same time send an email to specified member. 
 
+```
+
                                                   sms process  
                                                      /        \  
                                                     /           \
-[user] --> inititated process to send sms and email                --> pass to Message Broker 
+[Client] --> inititated process sending sms and email                --> pass to Message Broker 
                                                     \            /              |
                                                       \         /               |
                                                   email process           microservices
@@ -19,5 +21,11 @@ Data would be passed to RabbitMQ(message broker) by a producer and the rest of m
                                                                               /    \
                                                                         Email(PHP) Sms(Golang)
                                                                         
-                                                                        
-For this section, i assume we got two different 
+```
+
+For the sake of brevity, i just add two simple application that written in PHP and GO react as producer and consumer respectively.
+
+## How to Run
+Download this repository, and run these two files using CLI:
+- [Producer] - php publisher.php
+- [Consumer] - go run main.go
