@@ -1,0 +1,12 @@
+{
+    "name": "metallurgical/rabbit-mq",
+    "authors": [
+        {
+            "name": "Norlihazmey Ghazali",
+            "email": "norlihazmey.ghazali@gmail.com"
+        }
+    ],
+    "require": {
+      "php-amqplib/php-amqplib": ">=2.6.1"
+    }
+}
