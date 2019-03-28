@@ -26,6 +26,8 @@ Data would be passed to RabbitMQ(message broker) by a producer and the rest of m
 For the sake of brevity, i just add two simple application that written in PHP and GO react as producer and consumer respectively.
 
 ## How to Run
-Download this repository, and run these two files using CLI:
-- [Producer] - php publisher.php
-- [Consumer] - go run main.go
+Assumed already installed go and php on your local machine. Download this repository, and run these two files using CLI:
+- Run `composer install`
+- Install amqp for go: `go get github.com/streadway/amqp` 
+- [Producer] - `php publisher.php`
+- [Consumer] - `go run main.go`
