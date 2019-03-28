@@ -27,6 +27,7 @@ For the sake of brevity, i just add two simple application that written in PHP a
 
 ## How to Run
 Assumed already installed go and php on your local machine. Download this repository, and run these two files using CLI:
+- Configure CloudAMQP setting for both `publisher.php` and `main.go`. Using CloudAMQP is optional(register free account at cloudamqp)
 - Run `composer install`
 - Install amqp for go: `go get github.com/streadway/amqp` 
 - [Producer] - `php publisher.php`
